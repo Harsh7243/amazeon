@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.saasgenius.com/wp-content/uploads/2022/09/Amaze.png" alt="Logo">
+        </div>
+        <div id="login-section">
+            <h1>Login</h1>
+            <form id="login-form" onsubmit="login(); return false;">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="login-username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="login-btn">Login</button>
+                    <a href="#" onclick="showSignUp()">Sign Up</a>
+                </div>
+            </form>
+        </div>
+        <div id="signup-section" style="display: none;">
+            <h1>Sign Up</h1>
+            <form id="signup-form" onsubmit="signUp(); return false;">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="signup-username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="register-btn">Register</button>
+                    <a href="#" onclick="showLogin()">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
